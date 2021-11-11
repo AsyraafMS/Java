@@ -24,7 +24,8 @@ public class CSC248Assessment1
                 boolean aircond = Boolean.parseBoolean(st.nextToken());
 
                 // 2) Insert data of Maintenance objects into maintList
-                maintList.add(new Maintenance(phoneNo, plateNo, serviceType, aircond));
+                Maintenance obj = new Maintenance(phoneNo, plateNo, serviceType, aircond);
+                maintList.add(obj);
             }
             System.out.println("===== Diplay maintList  =====");
             for (int i = 0; i < maintList.size(); i++){
