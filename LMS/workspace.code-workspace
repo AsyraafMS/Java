@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "E:\\Game\\CLassActivity10"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"ostream": "cpp",
+			"iomanip": "cpp",
+			"iosfwd": "cpp",
+			"xlocale": "cpp",
+			"xstring": "cpp",
+			"xiosbase": "cpp"
+		}
+	}
+}
