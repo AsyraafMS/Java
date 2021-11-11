@@ -40,15 +40,14 @@ public class Functions
     // boolean | equals(Object obj)                 : Compares this object to the specified object.
     // 
 
-/**
- * private String leftpad(String text, int length) {
+ private String leftpad(String text, int length) {
     return String.format("%" + length + "." + length + "s", text);
 }
 
 private String rightpad(String text, int length) {
     return String.format("%-" + length + "." + length + "s", text);
 }
- */
+
 
 
 
