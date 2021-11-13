@@ -1,15 +1,16 @@
 public class LinkedList
 {
+    // A linked List must always be able to access the first node/ head  
     Node first, last, current;
     Node sorted;
 
     public LinkedList(){
-        first = last = null;
+        first = last = null; // An empty linked list is null on its first and last node 
     }
 
     public void insertAtFront(Integer o){
-        if(first == null){
-            first = last = new Node(o);
+        if(first == null){ // The list is empty
+            first = last = new Node(o); //
         } else{
             first = new Node(o, first);
         }
@@ -41,5 +42,5 @@ public class LinkedList
         return remove;
     }
 
-    
+
 }
