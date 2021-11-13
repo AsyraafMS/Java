@@ -1,5 +1,8 @@
 public class LinkedList
 {
+    // int returns the value
+    // Integer returns the address
+
     // A linked List must always be able to access the first node/ head  
     Node first, last, current;
     Node sorted;
@@ -8,39 +11,142 @@ public class LinkedList
         first = last = null; // An empty linked list is null on its first and last node 
     }
 
-    public void insertAtFront(Integer o){
+    public void insertAtFront(Integer o){ // (Use second constructor)
         if(first == null){ // The list is empty
-            first = last = new Node(o); //
-        } else{
+            first = last = new Node(o); // first node is also the last node
+        } else{ // list has node(s)
             first = new Node(o, first);
         }
     }
 
-    public void insertAtBack(Integer o){
-        if(first == null){
+    public void insertAtBack(Integer o){ // (Use first constructor)
+        if(first == null){ // The list is empty
             first = last = new Node(o);
-        } else{
-            last = last.next = new Node(o);
+        } else{ // list has node(s)
+            last = last.next = new Node(o); //the new node will next to the current last node |  ... -> oldLast -> newLast
         }
     }
 
-    public Integer removeFromFront(){
-        Integer remove;
-        if (first == null){
-            remove = null;
-        } else if (first == last){
-            remove = first.data;
-            first = last = null;
+    public int size(){
+        int count = 0;
+        Node curr = first; // go to the head/ first node
+
+         while (curr != null){ // loop until the next of the last node (null)
+             count++;
+             curr = curr.next;
+         }
+
+        return count;
+    }
+
+    public boolean isEmpty(){
+        if (first == null){ //yeah
+            return true;
         } else {
+            return false;
+        }
+    }
+
+    
+
+    public Integer removeAtFront(){
+        Integer remove; // 
+
+        if (first == null){ // there is no data in the list
+            remove = null;
+        } 
+        else if (first == last){ // there is only one data in the list
+            remove = first.data; 
+            first = last = null; 
+        }
+        else { // there is more than one node in the list
             remove = first.data;
-            if(first.next = last){
+            if(first.next == last){ // if there are two nodes in the list
                 first = last;
-            } else {
+            } else { // if there are more than two nodes in the list
                 first = first.next;
             }
+        }
+        return remove; //wakarimasen
+    }
+    
+
+    public Integer removeAtBack(){
+        Integer remove = null;
+        Node previous = null;
+
+        // there is no data in the list
+        if (first == null){
+            remove = null;
+        } else if (first == last ){// there is only one data in the list
+            remove = last.data;
+            first = last = null;
+        } else { //there are more than one data in the list
+            current = first;
+            if(last == first.next){//there are two data in the list
+                last = first;
+            } else{
+                current = first;
+                while (current.next != null){
+                    previous = current;
+                    current = previous.next;
+                }
+                remove = last.data;
+                last = previous;
+                previous.next = null;
+            }
+        
         }
         return remove;
     }
 
+    public void removeOdd(){
 
+        //1) make next of first node as new first node and delete previous node
+        Node temp = this.first;
+        this.first = this.first.next;
+        temp = null;
+
+        if (this.first != null){
+            //2) make evenNode and oddNodes
+            Node evenNode = this.first;
+            Node oddNode = this.first.next;
+
+            while (evenNode != null && oddNode != null){
+                // 3) make next of evenNode as next of oddNode and free oddNote
+                evenNode.next = oddNode.next;
+                oddNode = null;
+
+                // 4) make evenNode as next of evenNode
+                evenNode = evenNode.next;
+
+                // 5) Update evenNode and oddNode
+                if (evenNode != null){
+                    oddNode = evenNode.next;
+                }
+            }
+        }
+    }
+
+
+// IMPORTANT ACCESSORS
+
+    public Integer getFirst(){
+        current = first; // importante
+        if (first == null){ // list is empty
+            return null;
+        } else {
+            return current.data;
+        }
+    }
+
+    public Integer getNext(){ // to traverse the linkedList (go next and so on)
+        
+        if (current != last){ // while the address of the first node is not equal to the last
+            current = current.next; // go to the node next to the current node
+            return current.data;
+        } else{
+            return null; // reach last node
+        }
+    }
 }
