@@ -64,8 +64,6 @@ public class TestNum
         }
         System.out.println("\n--- TOTAL EVEN NUMBERS ---");
         System.out.println("Count even number(s): " + count + "\nSum of even numbers: " + sumEven + "\n-------------------------");
-
-
     }
 
      
