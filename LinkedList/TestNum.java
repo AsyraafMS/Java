@@ -40,7 +40,7 @@ public class TestNum
 
         // 2) remove the last node
         System.out.println("\n--- REMOVE LAST NODE ---");
-        intList.removeAtBack();
+        Integer last = intList.removeAtBack();
         num = intList.getFirst();
         loop = 1;
 
@@ -49,20 +49,26 @@ public class TestNum
             loop++;
             num = intList.getNext();
         }
+        System.out.println("Removed Integer: " + last);
         System.out.println("-------------------------");
 
-
-        // 2) remove all odd numbers
-        System.out.println("\n--- REMOVE ALL ODD NUMBERS ---");
-        intList.removeOdd();
+        //3 
+        int count = 0, sumEven = 0;
         num = intList.getFirst();
-        loop = 1;
-
-        while ( num != null){
-            System.out.println("["+loop+"]"+" intList: "+ num);
-            loop++;
+        while( num != null){
+            if( num % 2 == 0){
+                count++;
+                sumEven += num;
+            }
             num = intList.getNext();
         }
-        System.out.println("-------------------------");
+        System.out.println("\n--- TOTAL EVEN NUMBERS ---");
+        System.out.println("Count even number(s): " + count + "\nSum of even numbers: " + sumEven + "\n-------------------------");
+
+
     }
+
+     
+
+     
 }

@@ -95,37 +95,12 @@ public class LinkedList
                 last = previous;
                 previous.next = null;
             }
-        
         }
         return remove;
     }
 
-    public void removeOdd(){
-
-        //1) make next of first node as new first node and delete previous node
-        Node temp = this.first;
-        this.first = this.first.next;
-        temp = null;
-
-        if (this.first != null){
-            //2) make evenNode and oddNodes
-            Node evenNode = this.first;
-            Node oddNode = this.first.next;
-
-            while (evenNode != null && oddNode != null){
-                // 3) make next of evenNode as next of oddNode and free oddNote
-                evenNode.next = oddNode.next;
-                oddNode = null;
-
-                // 4) make evenNode as next of evenNode
-                evenNode = evenNode.next;
-
-                // 5) Update evenNode and oddNode
-                if (evenNode != null){
-                    oddNode = evenNode.next;
-                }
-            }
-        }
+    public void removeEvens(){
+        
     }
 
 
