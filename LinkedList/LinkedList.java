@@ -47,8 +47,6 @@ public class LinkedList
         }
     }
 
-    
-
     public Integer removeAtFront(){
         Integer remove; // 
 
@@ -98,11 +96,6 @@ public class LinkedList
         }
         return remove;
     }
-
-    public void removeEvens(){
-        
-    }
-
 
 // IMPORTANT ACCESSORS
 
