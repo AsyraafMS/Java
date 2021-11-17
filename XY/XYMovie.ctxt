@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=XYMovie
+comment1.params=
+comment1.target=java.lang.String\ getTitle()
+comment2.params=
+comment2.target=double\ getPrice()
+comment3.params=
+comment3.target=java.lang.String\ getModePayment()
+numComments=4

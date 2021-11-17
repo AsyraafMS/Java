@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Node
+comment1.params=o
+comment1.target=Node(XYMovie)
+comment2.params=o\ next
+comment2.target=Node(XYMovie,\ Node)
+numComments=3

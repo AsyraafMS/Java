@@ -40,7 +40,7 @@ public class TestNum
 
         // 2) remove the last node
         System.out.println("\n--- REMOVE LAST NODE ---");
-        Integer last = intList.removeAtBack();
+        Integer last = intList.removeFromSecond();
         num = intList.getFirst();
         loop = 1;
 
