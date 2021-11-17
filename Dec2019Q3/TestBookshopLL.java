@@ -9,7 +9,7 @@ public class TestBookshopLL
 
             int loop = 1;
 
-            for(int i = 0; i<2; i++){
+            for(int i = 0; i<3; i++){
                 System.out.println("Input :" + loop);
                 System.out.print("["+loop+"]"+"Enter title: ");
                 String title = in.nextLine();
@@ -26,6 +26,7 @@ public class TestBookshopLL
                 bList1.addFirst(obj);
                 loop++;
             }
+            in.close();
 
             // b) Count and siplay the total number of Book objects
             // in the bList1 that are published in the year 2019
@@ -43,20 +44,27 @@ public class TestBookshopLL
             count--;
             System.out.println("Total Books in 2019: "+ count);
 
+            // --cari min sat--
+            // num = bList1.getFirst();
+            // int min = num.getYear();
+            // while (num != null){
+            //     if (num.getYear() < min){
+            //         min = num.getYear();
+            //     }
+            //     num = bList1.getNext();
+            // }
+
             //Search and display the title of the first book 
             //(smallest value of pubYear) written by
             //"James Gosling" in the bListl.
-            loop = 1;
-            //String key = "James Gosling";
             System.out.println("\n--- SEARCH AND DISPLAY ---");
             num = bList1.getFirst();
+            int min = num.getYear();
             while (num != null){
-                System.out.println(num.getAuthor()+ "  "+ loop);
-                if (num.getAuthor() == "James Gosling"){
+                if (num.getYear() <= min && num.getAuthor().equalsIgnoreCase("james gosling")){
                     System.out.println(num.toString());
                 }
                 num = bList1.getNext();
-                loop++;
             }
         } catch (Exception e) {
             //TODO: handle exception
