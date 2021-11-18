@@ -14,8 +14,9 @@ public class testClass
         while (num != null){
             if(num.getModePayment().equalsIgnoreCase("credit card")){
                  // LL(1 -> 2 -> 3 -> null) ==> (1 -> 3 -> null)
+                 // CC(2 -> null)
                 
-                CreditCardLL.insertAtBack(moviesLL.removeFromSecond()); // CC(2 -> null)
+                CreditCardLL.insertAtBack(moviesLL.removeFromSecond()); 
                 //wtf
             } else if (num.getModePayment().equalsIgnoreCase("cash")){
                 

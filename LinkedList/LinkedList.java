@@ -14,8 +14,32 @@ public class LinkedList
     public void insertAtFront(Integer o){ // (Use second constructor)
         if(first == null){ // The list is empty
             first = last = new Node(o); // first node is also the last node
-        } else{ // list has node(s)
+        } else if ( first == last){ // if list got one node
+            first = new Node(o);
+            last = first;
+        } 
+        else{ // list has node(s)
             first = new Node(o, first);
+        }
+    }
+
+    public void insertAtSecond(Integer o){ // (Use second constructor)
+        if(first == null){ // The list is empty
+            first = last = new Node(o); // first node is also the last node
+        } else if ( first == last){ // if list got one node
+            first.next = new Node(o);
+            last = first.next;
+        } 
+        else{ // list has node(s)
+            first.next = new Node(o, first.next);
+                // create new temp node to retain the orginal first node
+                Node n = new Node(o);
+                n.next = first.next;
+                
+                first.next = n;
+
+            // first.next = new Node(o);
+            // 
         }
     }
 

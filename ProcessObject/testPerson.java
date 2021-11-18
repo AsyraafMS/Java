@@ -22,14 +22,14 @@ public class testPerson{
             
             //calculate and display average of all persons in the list
             System.out.println("\n--- AVERAGE ---");
-            Person num = personLL.getFirst();
+            Person num = (Person)personLL.getFirst();
             int sumAge = 0;
             int size = personLL.size();
             double avg = 0;
 
             while ( num != null){
                 sumAge += num.getAge();
-                num = personLL.getNext();
+                num = (Person)personLL.getNext();
             }
             
             avg = sumAge/size;
@@ -39,7 +39,7 @@ public class testPerson{
             
             //count and display all female persons
             System.out.println("\n--- DISPLAY ALL F ---");
-            num = personLL.getFirst();
+            num = (Person)personLL.getFirst();
             int count = 0;
 
             while (num != null){
@@ -47,7 +47,7 @@ public class testPerson{
                     System.out.println("["+(count+1)+"] "+num.toString());
                     count++;
                 }
-                num = personLL.getNext();
+                num = (Person)personLL.getNext();
             } 
             System.out.println("Total Count: "+ (count));
 

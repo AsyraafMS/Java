@@ -1,7 +1,7 @@
 public class LinkedList
 {
     // int returns the value
-    // Person returns the address
+    // Object returns the address
 
     // A linked List must always be able to access the first node/ head  
     Node first, last, current;
@@ -11,7 +11,7 @@ public class LinkedList
         first = last = null; // An empty linked list is null on its first and last node 
     }
 
-    public void insertAtFront(Person o){ // (Use second constructor)
+    public void insertAtFront(Object o){ // (Use second constructor)
         if(first == null){ // The list is empty
             first = last = new Node(o); // first node is also the last node
         } else{ // list has node(s)
@@ -19,7 +19,7 @@ public class LinkedList
         }
     }
 
-    public void insertAtBack(Person o){ // (Use first constructor)
+    public void insertAtBack(Object o){ // (Use first constructor)
         if(first == null){ // The list is empty
             first = last = new Node(o);
         } else{ // list has node(s)
@@ -49,8 +49,8 @@ public class LinkedList
 
     
 
-    public Person removeAtFront(){
-        Person remove; // 
+    public Object removeAtFront(){
+        Object remove; // 
 
         if (first == null){ // there is no data in the list
             remove = null;
@@ -70,8 +70,8 @@ public class LinkedList
         return remove; //wakarimasen
     }
 
-    public Person removeFromSecond(){
-        Person remove; 
+    public Object removeFromSecond(){
+        Object remove; 
 
         if (first == null){ // there is no data in the list
             remove = null;
@@ -94,8 +94,8 @@ public class LinkedList
     
     
 
-    public Person removeAtBack(){
-        Person remove = null;
+    public Object removeAtBack(){
+        Object remove = null;
         Node previous = null;
 
         // there is no data in the list
@@ -126,7 +126,7 @@ public class LinkedList
 
 // IMPORTANT ACCESSORS
 
-    public Person getFirst(){
+    public Object getFirst(){
         current = first; // importante
         if (first == null){ // list is empty
             return null;
@@ -135,7 +135,7 @@ public class LinkedList
         }
     }
 
-    public Person getNext(){ // to traverse the linkedList (go next and so on)
+    public Object getNext(){ // to traverse the linkedList (go next and so on)
         
         if (current != last){ // while the address of the first node is not equal to the last
             current = current.next; // go to the node next to the current node

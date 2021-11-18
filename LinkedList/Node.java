@@ -2,7 +2,10 @@ public class Node{
 
     //Should have two attributes: data and reference
 
-    Integer data; // Data type depends on the type of data you want to store be it Integer or Student objects
+    // replace Integer with Integer to make it more flexible
+    // Superclass of all classes
+    // Integer data; and so on
+    Integer data; // Data type depends on the type of data you want to store be it Integer or Student Integers
     Node next; // next --> reference attribute
     
     //Singly linked lista
