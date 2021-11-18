@@ -40,16 +40,16 @@ public class testPerson{
             //count and display all female persons
             System.out.println("\n--- DISPLAY ALL F ---");
             num = personLL.getFirst();
-            int count = 1;
+            int count = 0;
 
             while (num != null){
                 if (num.getGender() == 'F'){
-                    System.out.println("["+count+"] "+num.toString());
+                    System.out.println("["+(count+1)+"] "+num.toString());
                     count++;
                 }
                 num = personLL.getNext();
-            }
-            System.out.println("Total Count: "+ count);
+            } 
+            System.out.println("Total Count: "+ (count));
 
     }
 }

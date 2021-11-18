@@ -69,6 +69,29 @@ public class LinkedList
         }
         return remove; //wakarimasen
     }
+
+    public Person removeFromSecond(){
+        Person remove; 
+
+        if (first == null){ // there is no data in the list
+            remove = null;
+        } 
+        else if (first == last){ // there is only one data in the list
+            remove = first.data; 
+            first = last = null; 
+        }
+        else { // there is more than one node in the list
+            Node second = first.next;
+            remove = second.data;
+            if(first.next == last){ // if there are two nodes in the list
+                first = last;
+            } else { // if there are more than two nodes in the list
+                first.next = first.next.next;
+            }
+        }
+        return remove;
+    }
+    
     
 
     public Person removeAtBack(){
@@ -99,9 +122,6 @@ public class LinkedList
         return remove;
     }
 
-    public void removeEvens(){
-        
-    }
 
 
 // IMPORTANT ACCESSORS

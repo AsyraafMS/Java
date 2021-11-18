@@ -44,7 +44,7 @@ public class TestBookshopLL
             count--;
             System.out.println("Total Books in 2019: "+ count);
 
-            // --cari min sat--
+            // --- cari min sat ---
             // num = bList1.getFirst();
             // int min = num.getYear();
             // while (num != null){
