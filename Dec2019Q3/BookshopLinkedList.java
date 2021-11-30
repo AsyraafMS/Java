@@ -7,7 +7,7 @@ public class BookshopLinkedList
     public BookshopLinkedList() {
         first = last = null;
     }
-
+ 
     // a) COmplete definition of the addFirst() method.
     public void addFirst(Book b){
         if (first == null){
