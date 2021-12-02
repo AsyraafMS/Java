@@ -53,7 +53,7 @@ public class testPersonQ
 
        int ageCount = 0; // output count
        //temp queuue
-       Queue tempQ2 = new Queue();
+       //Queue tempQ2 = new Queue();
        while (!persons.isEmpty()){
            Person temp = (Person) persons.dequeue(); //removing front
 
@@ -61,12 +61,31 @@ public class testPersonQ
                ageCount++;
                System.out.println("["+ageCount+"] "+temp.toString());
            }
-           tempQ2.enqueue(temp); //temp queue for reinserting
+           tempQ.enqueue(temp); //temp queue for reinserting
        }
-       while (!tempQ2.isEmpty()){
-           persons.enqueue(tempQ2.dequeue()); //reinserting
+       while (!tempQ.isEmpty()){
+           persons.enqueue(tempQ.dequeue()); //reinserting
+       }
+       System.out.println("======================================================================");
+       //create two queues that would copy all person with name starts with letter A and other letters in another queue
+       Queue queueA = new Queue();
+       Queue queueBZ = new Queue();
+
+       while (!persons.isEmpty())
+       {
+           Person temp = (Person) persons.dequeue(); // removing front
+
+           if (temp.getName().startsWith("A")){
+                queueA.enqueue(temp);
+            } else {
+               queueBZ.enqueue(temp);
+           }
+           tempQ.enqueue(temp); // to reinsert
        }
 
+       while(!tempQ.isEmpty())
+       {
+           persons.enqueue(tempQ.dequeue()); // reinserting
+       }
    }
-
 }
