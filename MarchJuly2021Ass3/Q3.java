@@ -29,7 +29,7 @@ public class Q3 {
        {
            CounterService temp = (CounterService) customerList.dequeue(); // removing front
 
-           if (temp.getCategory() == "Business"){
+           if (temp.getCategory().equalsIgnoreCase("Business")){
                 System.out.println("WaitID: "+ temp.getWaitID()+"\nCategory: "+temp.getCategory()+"\nService Type: "+getServiceType());
             }
 

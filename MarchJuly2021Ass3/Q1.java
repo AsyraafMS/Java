@@ -29,24 +29,25 @@ public class Q1
         ArrayList OthersAL = new ArrayList();
 
         for (int i = 0; i < deliAL.size(); i++ ){
-            if ( ((Delivery)deliAL.get(i)).getType().equalsIgnoreCase("foodpanda")){
-                PandaAL.add(deliAl.remove(i));
-            } else if ( ((Delivery)deliAL.get(i)).getType().equalsIgnoreCase("grabfood")){
+            if ( deliAL.get(i).getType().equalsIgnoreCase("foodpanda")){
+                PandaAL.add(deliAL.remove(i));
+            } else if ( deliAL.get(i).getType().equalsIgnoreCase("grabfood")){
                 GrabAL.add(deliAL.remove(i));
             } else {
                 OthersAL.add(deliAL.remove(i));
             }
+            i--;
         }
 
 
         double sum = 0;
         for (int i = 0; i < PandaAL.size(); i++){
-            if (((Delivery)PandaAL.get(i)).getArea().equalsIgnoreCase("Marang")){
+            if (PandaAL.get(i).getArea().equalsIgnoreCase("Marang")){
                 
                 double charge = 0;
-                charge = ((Delivery)PandaAL.get(i)).getCharge() * ((Delivery)PandaAL.get(i)).getDistance();
+                charge = PandaAL.get(i).getCharge() * PandaAL.get(i).getDistance();
  
-                sum += ((Delivery)PandaAL.get(i)).getOrder() + charge;
+                sum += PandaAL.get(i).getOrder() + charge;
             }
         }
         System.out.println("Sum for FoodPanda services in Marang: RM" + sum);
