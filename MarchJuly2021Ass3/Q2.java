@@ -57,7 +57,7 @@ public class Q2 {
         RegisteredVaccination vacc = registeredList.getFirst();
         while (vacc != null){
 
-            if ( vacc.getPostcode().startsWith("3") ){ //vacc.getPostcode().substring(0,1) == '3'
+            if ( vacc.getPostcode().startsWith("3") ){ //vacc.getPostcode().substring(0,1) == '3' ??
                 System.out.println("Name: "+ vacc.getName() +"\nAddress: "+vacc.getAddress());
             }
 

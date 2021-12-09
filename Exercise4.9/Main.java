@@ -17,5 +17,10 @@ public class Main
 
 }
 
+        //line 1
         myQueue1 => empty
         myQueue2 => (head) 20 -> 45 -> 30 -> 45
+
+        //line 2
+        myQueue1 => empty
+        myQueue2 => empty
