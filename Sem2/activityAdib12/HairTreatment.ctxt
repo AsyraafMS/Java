@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=HairTreatment
+comment1.params=num\ name\ member\ date\ rebonding\ cutting\ washing\ dyeing
+comment1.target=HairTreatment(java.lang.String,\ java.lang.String,\ boolean,\ java.lang.String,\ boolean,\ boolean,\ boolean,\ boolean)
+comment2.params=
+comment2.target=boolean\ getRebonding()
+comment3.params=
+comment3.target=boolean\ getCutting()
+comment4.params=
+comment4.target=boolean\ getWashing()
+comment5.params=
+comment5.target=boolean\ getDyeing()
+comment6.params=
+comment6.target=double\ calcHairTreatment()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

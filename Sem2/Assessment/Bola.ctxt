@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Bola
+comment1.params=g\ y\ n
+comment1.target=Bola(int[],\ int[],\ java.lang.String[])
+comment2.params=goalScored
+comment2.target=int\ findHighestGoals(int[])
+comment3.params=yellowCard\ playerNames
+comment3.target=java.lang.String\ findNames(int[],\ java.lang.String[])
+numComments=4

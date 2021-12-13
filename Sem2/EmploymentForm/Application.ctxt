@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Application
+comment0.text=\ private\ String\ name;\r\n\ \ \ \ private\ int\ age;\r\n\ \ \ \ private\ char\ sex;\ \ \ \ \ \ //\ M\ /\ F\r\n\ \ \ \ private\ char\ marital;\ \ //\ maried/single\r\n\ \ \ \ private\ char\ jobClass;\ //\ industrial\ /\ information\r\n\ \ \ \ private\ char\ health;\ \ \ //\ 1\ \=\ very\ good,\ 2\ \=\ good\r\n\ \ \ \ private\ double\ wage;\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

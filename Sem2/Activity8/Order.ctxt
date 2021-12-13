@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Order
+comment1.params=
+comment1.target=Order()
+comment2.params=
+comment2.target=void\ setData()
+comment3.params=
+comment3.target=int\ getCustomer()
+comment4.params=
+comment4.target=double\ calcPrice()
+comment5.params=disc
+comment5.target=double\ calcPrice(double)
+comment6.params=order
+comment6.target=boolean\ isExpensive(Order)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Student
+comment1.params=n\ m\ bd\ p
+comment1.target=Student(java.lang.String,\ int,\ Date,\ java.lang.String)
+comment2.params=
+comment2.target=int\ detAge()
+comment3.params=
+comment3.target=java.lang.String\ theName()
+comment4.params=
+comment4.target=int\ theMetric()
+comment5.params=
+comment5.target=Date\ theBirthDate()
+comment6.params=
+comment6.target=java.lang.String\ theProgram()
+numComments=7

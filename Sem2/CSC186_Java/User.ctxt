@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=User
+comment1.params=
+comment1.target=User()
+comment1.text=constructor
+comment2.params=Id\ pass
+comment2.target=void\ setCredentials(java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=boolean\ verifyLogin()
+comment3.text=method
+numComments=4

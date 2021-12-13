@@ -6,7 +6,7 @@ public class Q2 {
         LinkedList thirdLL = new LinkedList();
 
         //b
-        RegisteredForVaccination vacc = ((RegistreredVaccination) registeredList).getFirst();
+        RegisteredForVaccination vacc = ((RegistreredForVaccination) registeredList).getFirst();
         while (vacc != null){
 
             if(vacc.getFrontliner() == "yes"){

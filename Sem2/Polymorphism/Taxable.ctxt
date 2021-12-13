@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Taxable
+comment1.params=
+comment1.target=Taxable()
+comment2.params=s\ p\ t
+comment2.target=Taxable(java.lang.String,\ double,\ double)
+comment3.params=tax
+comment3.target=void\ setTax(double)
+comment4.params=
+comment4.target=double\ getTax()
+comment5.params=
+comment5.target=double\ calc()
+comment6.params=
+comment6.target=double\ netPrice()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

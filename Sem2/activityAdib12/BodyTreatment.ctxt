@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=BodyTreatment
+comment1.params=num\ name\ member\ date\ type
+comment1.target=BodyTreatment(java.lang.String,\ java.lang.String,\ boolean,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getTreatmentType()
+comment3.params=
+comment3.target=double\ calcBodyTreatment()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

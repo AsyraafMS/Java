@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=CDRental
+comment1.params=
+comment1.target=CDRental()
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=java.lang.String\ getAddress()
+comment4.params=
+comment4.target=java.lang.String\ getPhoneNum()
+comment5.params=
+comment5.target=java.lang.String\ getSerialID()
+comment6.params=
+comment6.target=java.lang.String\ getTitle()
+comment7.params=
+comment7.target=double\ getPrice()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

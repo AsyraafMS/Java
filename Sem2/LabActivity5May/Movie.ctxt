@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Movie
+comment1.params=
+comment1.target=Movie()
+comment2.params=mc\ t\ p\ yP\ pC
+comment2.target=Movie(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ double)
+comment3.params=movie
+comment3.target=Movie(Movie)
+comment4.params=movie1
+comment4.target=boolean\ costMore(Movie)
+comment5.params=currentYear
+comment5.target=int\ olderMovie(int)
+comment6.params=searchProducer
+comment6.target=Movie\ searchMovie(java.lang.String)
+comment7.params=
+comment7.target=java.lang.String\ identifyGenre()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

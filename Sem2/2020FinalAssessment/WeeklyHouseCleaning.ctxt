@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=WeeklyHouseCleaning
+comment1.params=ic\ name\ phone\ zone\ wkPackage\ session
+comment1.target=WeeklyHouseCleaning(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ char,\ java.lang.String)
+comment2.params=
+comment2.target=char\ getWeeklyPakcage()
+comment3.params=
+comment3.target=java.lang.String\ getWeeklySession()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=
+comment5.target=double\ calcCleaningCharges()
+numComments=6

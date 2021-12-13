@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=MedicalEquip
+comment1.params=pn\ pp
+comment1.target=MedicalEquip(java.lang.String,\ double)
+comment2.params=
+comment2.target=java.lang.String\ getExpiry()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=dp
+comment4.target=double\ calcPayment(double)
+numComments=5

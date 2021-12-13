@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=TaxFree
+comment1.params=
+comment1.target=TaxFree()
+comment2.params=i\ p\ d
+comment2.target=TaxFree(java.lang.String,\ double,\ double)
+comment3.params=disc
+comment3.target=void\ setDic(double)
+comment4.params=
+comment4.target=double\ getDisc()
+comment5.params=
+comment5.target=double\ calculateDiscount()
+comment6.params=
+comment6.target=double\ netPrice()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

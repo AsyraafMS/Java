@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=CleaningService
+comment1.params=ic\ name\ no\ zone
+comment1.target=CleaningService(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getClientIC()
+comment3.params=
+comment3.target=java.lang.String\ getClientPhoneNo()
+comment4.params=
+comment4.target=java.lang.String\ getClientZone()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment6.params=
+comment6.target=double\ calcCleaningCharges()
+numComments=7
