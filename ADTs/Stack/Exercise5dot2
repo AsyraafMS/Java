@@ -1,0 +1,10 @@
+Exercise 5.2 (tracing the stack program)
+        
+4 -> 3 -> 2 -> 1
+
+// Answer
+The top element in the stack is 4
+The size of the stack is 3
+Data in the stack: 1 2 3
+
+        
