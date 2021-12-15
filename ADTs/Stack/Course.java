@@ -12,4 +12,7 @@ public class Course
         numLect = nl;
         numStud = ns;
     }
+
+    public String getFCode(){ return facCode;}
+    
 }

@@ -3,7 +3,6 @@ import java.util.Stack;
 
 public class Exercise5dot3
 {
-
     public static void main(String [] args){
 
         //b)

@@ -1,5 +1,7 @@
 
 /** 
+ *  change classpath to compile and run 
+ *
  * NAMING CONVENTION
  * --------------------------------------------------------------------------------------------------------------------
  * | Class Name       | Should start with uppercase letter and be a noun.        | Example: Color, Button             |
