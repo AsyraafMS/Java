@@ -11,7 +11,8 @@ public class ArrayList {
      * | void clear()                    | Clears the list                                            |
      * | boolean isEmpty()               | Returns true if the list is empty                          |
      * +----------------------------------------------------------------------------------------------+
-     * 
+     *              
+     *         when removing remember to i-- (see MarchJuly2021Ass3 Q1)     
      * 
      * 
      */

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import javax.print.attribute.standard.MediaSize.Other;
+//import javax.print.attribute.standard.MediaSize.Other;
 public class Q1
 {
     public static void main (String [] args){

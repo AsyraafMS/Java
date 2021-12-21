@@ -41,7 +41,7 @@ public class Main
        while (!tempQ.isEmpty()){
            houseQ.enqueue(tempQ.dequeue());
        }
-    } // idk
+     // idk
 
     // c)
     Queue bunglowQ = new Queue();
@@ -63,7 +63,7 @@ public class Main
 
        // d) 
        int count = 1;
-       System.out.println("No.\t\tLot Number\t\tNew Price")
+       System.out.println("No.\t\tLot Number\t\tNew Price");
        while ( !doubleQ.isEmpty() )
        {
             House temp = (House) houseQ.dequeue();
@@ -77,7 +77,7 @@ public class Main
        }
 
        count = 1;
-       System.out.println("No.\t\tLot Number\t\tNew Price")
+       System.out.println("No.\t\tLot Number\t\tNew Price");
        while ( !bunglowQ.isEmpty() )
        {
             House temp = (House) houseQ.dequeue();
@@ -89,8 +89,5 @@ public class Main
        while (!tempQ.isEmpty()){
            houseQ.enqueue(tempQ.dequeue());
        }
-
-
-
-
+    }
 }
