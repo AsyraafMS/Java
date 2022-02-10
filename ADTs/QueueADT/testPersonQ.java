@@ -70,7 +70,7 @@ public class testPersonQ
        //create two queues that would copy all person with name starts with letter A and other letters in another queue
        Queue queueA = new Queue();
        Queue queueBZ = new Queue();
-
+ 
        while (!persons.isEmpty())
        {
            Person temp = (Person) persons.dequeue(); // removing front

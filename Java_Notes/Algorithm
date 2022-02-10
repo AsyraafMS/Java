@@ -69,7 +69,7 @@ ArrayList <Definition> arrList = new ArrayList<Definition>(); // --> Generic, wh
             }
             arrList.get(j + 1) = key;
         }
-
+ 
 // MIN/MAX VALUE
     // loop to find minimum from ArrayList
     public static int getMin(ArrayList arr){

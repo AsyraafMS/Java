@@ -1,0 +1,10 @@
+Syahirah;S;Yes;No;ML01;8.75
+Waish;L;Yes;Yes;ML03;14.90
+Xu Lin;M;No;Yes;ML04;12.50
+Qayyum;S;Yes;No;ML01;8.50
+Sarra;M;No;No;ML03:9.78
+Aiman;L;Yes;Yes;ML04;15.00
+Rezza;M;No;Yes;ML02;12.50
+Raisya;L;Yes;No;ML03;14.90
+Aizat;M;No;Yes;ML01;12.50
+Fairuz;S;Yes;Yes;ML04;8.75
