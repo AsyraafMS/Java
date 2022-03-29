@@ -318,8 +318,10 @@ public class Main
                   if (min > books[i].getBookBorrowCount()){
                      min = books[i].getBookBorrowCount();
                      index = i;
-                  }
+                  }// f
                }
+
+         
                System.out.println("\n============================================BOOK LIST============================================");
                System.out.println(String.format("| "+"%0$-4s", " ID") +" | "+String.format("%0$-30s", "            Title")+" | "+String.format("%0$-15s", "   Subject")+" | "+String.format("%0$-16s", "     Author")+" | "+String.format("%0$-4s", "Publication Date"+" |"));
                System.out.println("=================================================================================================");
@@ -400,4 +402,26 @@ public class Main
             System.out.println("Problem reading " + iox.getMessage());
       }
    }
+
+   // function to reverse a string
+   public static String reverse(String str){
+      String reverse = "";
+      for (int i = str.length()-1; i >= 0; i--){
+         reverse = reverse + str.charAt(i);
+      }
+      return reverse;
+   }
+
+   // function to reverse a linked list
+   public static void reverse(LinkedList<String> list){
+      LinkedList<String> reverse = new LinkedList<String>();
+      for (int i = list.size()-1; i >= 0; i--){
+         reverse.add(list.get(i));
+      }
+      list = reverse;
+   }
+
+
+
 }
+
